@@ -1,49 +1,9 @@
-/* TYPOGRAPHY */
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url('../fonts/OpenSans.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/OpenSans-Bold.ttf') format('truetype');
-}
-
-
 /* GENERAL */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
-=======
-  font-family: system-ui, 'Helvetica Neue', 'Open Sans', sans-serif;
->>>>>>> origin/master
-}
-
-body {
-  font-size: 1.125rem;
-  max-width: 130rem;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: default;
-}
-
-.cursor-pointer {
-  cursor: pointer;
-}
-
-=======
   font-family: system-ui, 'Helvetica Neue', 'Open Sans', sans-serif;
 }
 
@@ -61,7 +21,6 @@ body {
   cursor: pointer;
 }
 
->>>>>>> refs/remotes/ajyang818/master
 .pull-right {
   float: right;
 }
@@ -178,15 +137,18 @@ body {
   display: inline-block;
   vertical-align: top;
   margin: .5rem;
-  animation: fadeInUp 1s both;
+}
+
+#day-pris {
+  animation: bounceIn 1s 300ms both;
 }
 
 #week-pris {
-  animation-delay: 150ms;
+  animation: fadeInUp 1s 150ms both;
 }
 
 #month-pris {
-  animation-delay: 300ms;
+  animation: fadeInUp 1s both;
 }
 
 .list-container {
@@ -508,5 +470,45 @@ input[type=checkbox]:not(.immune) {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUpBounce {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+    transform: translateY(0px);
+  }
+  90% {
+    transform: scale(1.2);
+    transform: translateY(0px);
+  }
+  100% {
+    transform: scale(1);
   }
 }
