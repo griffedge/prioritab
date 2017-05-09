@@ -22,7 +22,11 @@
   margin: 0;
   padding: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
+=======
+  font-family: system-ui, 'Helvetica Neue', 'Open Sans', sans-serif;
+>>>>>>> origin/master
 }
 
 body {
