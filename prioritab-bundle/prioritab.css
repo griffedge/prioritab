@@ -21,6 +21,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
 }
 
@@ -38,6 +39,25 @@ body {
   cursor: pointer;
 }
 
+=======
+  font-family: system-ui, 'Helvetica Neue', 'Open Sans', sans-serif;
+}
+
+body {
+  font-size: 1.125rem;
+  max-width: 130rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: default;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+>>>>>>> refs/remotes/ajyang818/master
 .pull-right {
   float: right;
 }
