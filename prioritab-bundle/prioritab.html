@@ -102,30 +102,31 @@
     <i id="customize-button" class="fa fa-cogs shadow-color" title="Customization"></i>
     <div id="customize-selectors" class="main-bgcolor">
       <h1 id="customize-corner-title">Customization</h1>
-      <h2>Colors:</h2>
-      <button id="background-color-selector" class="color-selector-label cursor-pointer">Background <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-      <br />
-      <button id="font-color-selector" class="color-selector-label cursor-pointer">Font <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-      <br />
-      <button id="shadow-color-selector" class="color-selector-label cursor-pointer">Secondary Font <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-      <br />
-      <br />
-      <button id="restore-default-colors" class="cursor-pointer">Restore default colors</button>
-      <br />
-      <br />
-      <h2>Workday:</h2>
-      <input type="checkbox" name="workday-on" class="immune" id="workday-checkbox">Make day timer based on my workday:
-      <br />
-      <span>Workday start: </span>
-      <input type="time" name="workday-start" id="workday-start-timeinput" value="09:00" class="time-input">
-      <span> - Workday end: </span>
-      <input type="time" name="workday-end" id="workday-end-timeinput" value="18:00" class="time-input">
-      <button id="workday-time-save">Save</button>
-      <br />
-      <br />
-      <h2>Date and Time format:</h2>
-      <span>Date format: </span>
-      <select name="date-format-input" id="date-format-input">
+      <section>
+        <h1><i class="fa fa-paint-brush" aria-hidden="true"></i> Colors:</h1>
+        <button id="background-color-selector" class="color-selector-label cursor-pointer">Background <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        <br />
+        <button id="font-color-selector" class="color-selector-label cursor-pointer">Primary Font <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        <br />
+        <button id="shadow-color-selector" class="color-selector-label cursor-pointer">Secondary Font <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        <br />
+        <br />
+        <button id="restore-default-colors" class="cursor-pointer">Restore default colors</button>
+      </section>
+      <section>
+        <h1><i class="fa fa-briefcase" aria-hidden="true"></i> Workday:</h1>
+        <input type="checkbox" name="workday-on" class="immune" id="workday-checkbox">Make day timer based on my workday:
+        <br />
+        <span>Workday start: </span>
+        <input type="time" name="workday-start" id="workday-start-timeinput" value="09:00" class="time-input">
+        <span> - Workday end: </span>
+        <input type="time" name="workday-end" id="workday-end-timeinput" value="18:00" class="time-input">
+        <button id="workday-time-save"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+      </section>
+      <section>
+        <h1><i class="fa fa-calendar-o" aria-hidden="true"></i> Date and Time:</h1>
+        <span>Date format: </span>
+        <select name="date-format-input" id="date-format-input">
         <optgroup label="American">
           <option>MM/DD/YYYY</option>
           <option>MMM D, YYYY</option>
@@ -140,8 +141,8 @@
           <option>YYYY-MM-DD</option>
         </optgroup>
       </select>
-      <span>Time format: </span>
-      <select name="time-format-input" id="time-format-input">
+        <span>Time format: </span>
+        <select name="time-format-input" id="time-format-input">
         <optgroup label="12 hour">
           <option>h:mm A</option>
           <option>h:mm:ss A</option>
@@ -151,19 +152,19 @@
           <option>HH:mm:ss</option>
         </optgroup>
       </select>
-      <button id="date-time-format-save">Save</button>
-      <br />
-      <br /> Remove: <button id="uninstall-extension-button">Uninstall Prioritab</button>
-      <br />
-      <br />
-      <button id="hide-customize-selectors" class="cursor-pointer">(Hide)</button>
+        <button id="date-time-format-save"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+      </section>
+      <section>
+        Remove: <button id="uninstall-extension-button">Uninstall Prioritab</button>
+      </section>
+      <i class="fa fa-times" title="Close Window" id="hide-customize-selectors" class="cursor-pointer" style="font-size:2rem;"></i>
     </div>
   </div>
 
   <div id="update-footer">
     <span id="update-message">
             Update (12/31/2015): Double-click and ENTER to edit! To-dos can also be marked 'done' without deleting the card.<br />
-            <span id="update-hide" class="shadow-color">Hide</span>
+            <span id="update-hide" class="shadow-color fullwidth">Hide</span>
     </span>
   </div>
   <div id="info-corner">

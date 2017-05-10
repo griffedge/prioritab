@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project tries to adhere to [Semantic Versioning](http://semver.org/).
 
+## 2.0.1 - 2017-05-09
+### Changed
+- Gave Today priority the bounceIn animation, drawing attention to the soonest priorities
+
+### Removed
+- Open Sans and other unnecessary fonts from font-family
+
 ## 2.0.0 - 2017-03-26
 ### Changed
 - Implemented flex-box on lots more elements
@@ -13,6 +20,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/).
 - Aligned everything using units relative to browser's default font size (normally 16px)
   - This caused some elements to move around a little
 - Moved sortaeditalist.js to \lib
+- Primary font to be system-ui, making PT look more native on each device
 
 ## 1.3.0 - 2017-03-25
 ### Added
